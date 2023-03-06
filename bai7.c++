@@ -1,15 +1,15 @@
 #include<iostream>
 using namespace std;
-void chuyenSangNhiPhan(int n){
+string chuyenSangNhiPhan(int n){
     if (n > 0){
-        cout << n%2;  
-        chuyenSangNhiPhan(n/2);
+        return chuyenSangNhiPhan(n/2) + to_string(n%2);
     }
+    return "";
 }
 
 
 int main(){
     int n;
     cin >> n;
-    chuyenSangNhiPhan(n);
+    cout << chuyenSangNhiPhan(n);
 }
