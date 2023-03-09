@@ -1,59 +1,83 @@
 Bài 13:
-Code này sử dụng thuật toán nổi bọt để sắp xếp một mảng các số nguyên tăng dần.
-Hàm bubbleSort nhận đầu vào là một mảng A và số phần tử của mảng n. Trong hàm này,
-vòng lặp bên ngoài dùng để lặp qua từng phần tử của mảng. Trong khi đó, vòng lặp 
-bên trong sử dụng để so sánh các phần tử lân cận và hoán đổi chúng nếu chúng không 
-ở đúng thứ tự. Khi đã lặp qua tất cả các phần tử của mảng, mảng A sẽ được sắp xếp tăng dần.
-Trong hàm main, đầu tiên nhập số phần tử n của mảng, sau đó tạo mảng a 
-có kích thước n và nhập từng phần tử của mảng vào. Sau đó, gọi hàm bubbleSort
-để sắp xếp mảng a. Cuối cùng, in ra mảng a đã được sắp xếp tăng dần.
+    Code này sử dụng thuật toán nổi bọt để sắp xếp một mảng các số nguyên tăng dần.
+    Hàm bubbleSort nhận đầu vào là một mảng A và số phần tử của mảng n. Trong hàm này,
+    vòng lặp bên ngoài dùng để lặp qua từng phần tử của mảng. Trong khi đó, vòng lặp 
+    bên trong sử dụng để so sánh các phần tử lân cận và hoán đổi chúng nếu chúng không 
+    ở đúng thứ tự. Khi đã lặp qua tất cả các phần tử của mảng, mảng A sẽ được sắp xếp tăng dần.
+    Trong hàm main, đầu tiên nhập số phần tử n của mảng, sau đó tạo mảng a 
+    có kích thước n và nhập từng phần tử của mảng vào. Sau đó, gọi hàm bubbleSort
+    để sắp xếp mảng a. Cuối cùng, in ra mảng a đã được sắp xếp tăng dần.
 
 Bai 12:
-Hàm BnS nhận đầu vào là một mảng a, số phần tử của mảng n, 
-và số nguyên k cần tìm. Trong hàm này, ta khởi tạo biến dem 
-bằng 0 để đếm số lần lặp lại trong quá trình tìm kiếm. 
-Ta cũng khởi tạo biến l bằng 0 và biến r bằng n (số phần tử của mảng a) 
-để xác định khoảng giá trị mà k có thể nằm trong đó. Ta cũng khởi tạo biến 
-mid bằng trung bình của l và r.
-Trong vòng lặp while, ta kiểm tra xem đã tìm kiếm đủ n lần chưa, nếu rồi thì 
-thoát vòng lặp. Nếu k lớn hơn giá trị ở vị trí mid của mảng a, ta cập nhật l 
-bằng mid+1. Nếu k nhỏ hơn giá trị ở vị trí mid của mảng a, ta cập nhật r bằng 
-mid. Nếu k bằng giá trị ở vị trí mid của mảng a, ta trả về mid. Sau mỗi lần cập 
-nhật l, r, và mid, ta cập nhật biến dem lên 1.
-Nếu không tìm thấy giá trị k trong mảng, ta trả về -1.
-Trong hàm main, đầu tiên nhập số phần tử n của mảng, sau đó nhập số nguyên k cần tìm. 
-Tiếp theo, tạo mảng a có kích thước n và nhập từng phần tử của mảng vào. Cuối cùng, gọi 
-hàm BnS để tìm kiếm k trong mảng a, và in ra kết quả tìm kiếm.
+    Hàm BnS nhận đầu vào là một mảng a, số phần tử của mảng n, 
+    và số nguyên k cần tìm. Trong hàm này, ta khởi tạo biến dem 
+    bằng 0 để đếm số lần lặp lại trong quá trình tìm kiếm. 
+    Ta cũng khởi tạo biến l bằng 0 và biến r bằng n (số phần tử của mảng a) 
+    để xác định khoảng giá trị mà k có thể nằm trong đó. Ta cũng khởi tạo biến 
+    mid bằng trung bình của l và r.
+    Trong vòng lặp while, ta kiểm tra xem đã tìm kiếm đủ n lần chưa, nếu rồi thì 
+    thoát vòng lặp. Nếu k lớn hơn giá trị ở vị trí mid của mảng a, ta cập nhật l 
+    bằng mid+1. Nếu k nhỏ hơn giá trị ở vị trí mid của mảng a, ta cập nhật r bằng 
+    mid. Nếu k bằng giá trị ở vị trí mid của mảng a, ta trả về mid. Sau mỗi lần cập 
+    nhật l, r, và mid, ta cập nhật biến dem lên 1.
+    Nếu không tìm thấy giá trị k trong mảng, ta trả về -1.
+    Trong hàm main, đầu tiên nhập số phần tử n của mảng, sau đó nhập số nguyên k cần tìm. 
+    Tiếp theo, tạo mảng a có kích thước n và nhập từng phần tử của mảng vào. Cuối cùng, gọi 
+    hàm BnS để tìm kiếm k trong mảng a, và in ra kết quả tìm kiếm.
 
 
 bai 11
-Các bước thực hiện chương trình như sau:
-Nhập vào số phần tử của mảng n và các phần tử của mảng a.
-Nhập giá trị k cần chèn vào mảng a.
-Sử dụng hàm timViTri để tìm vị trí cần chèn phần tử k vào trong mảng a.
-Sử dụng hàm chen để chèn phần tử k vào vị trí tìm được từ bước trên vào mảng a.
-In ra mảng a sau khi đã chèn phần tử k vào vị trí thích hợp.
-Hàm timViTri sẽ trả về vị trí cần chèn phần tử k vào trong mảng a, sao cho mảng 
-a vẫn được sắp xếp tăng dần. Nếu giá trị k lớn hơn giá trị lớn nhất trong mảng a 
-thì hàm sẽ trả về n. Nếu giá trị k nhỏ hơn giá trị nhỏ nhất trong mảng a thì hàm 
-sẽ trả về 0.
-Hàm chen sẽ chèn phần tử k vào vị trí tmp trong mảng a bằng cách dịch các 
-phần tử từ vị trí tmp đến n-1 sang phải một vị trí, sau đó gán giá trị k vào 
-vị trí tmp. Cuối cùng, số phần tử của mảng sẽ tăng thêm một đơn vị.
+    Các bước thực hiện chương trình như sau:
+    Nhập vào số phần tử của mảng n và các phần tử của mảng a.
+    Nhập giá trị k cần chèn vào mảng a.
+    Sử dụng hàm timViTri để tìm vị trí cần chèn phần tử k vào trong mảng a.
+    Sử dụng hàm chen để chèn phần tử k vào vị trí tìm được từ bước trên vào mảng a.
+    In ra mảng a sau khi đã chèn phần tử k vào vị trí thích hợp.
+    Hàm timViTri sẽ trả về vị trí cần chèn phần tử k vào trong mảng a, sao cho mảng 
+    a vẫn được sắp xếp tăng dần. Nếu giá trị k lớn hơn giá trị lớn nhất trong mảng a 
+    thì hàm sẽ trả về n. Nếu giá trị k nhỏ hơn giá trị nhỏ nhất trong mảng a thì hàm 
+    sẽ trả về 0.
+    Hàm chen sẽ chèn phần tử k vào vị trí tmp trong mảng a bằng cách dịch các 
+    phần tử từ vị trí tmp đến n-1 sang phải một vị trí, sau đó gán giá trị k vào 
+    vị trí tmp. Cuối cùng, số phần tử của mảng sẽ tăng thêm một đơn vị.
 
 bai 10:
-Code này kiểm tra trong một mảng các số nguyên có bao nhiêu số có tổng chữ số lẻ 
-bằng tổng chữ số chẵn của số đó.
+    Code này kiểm tra trong một mảng các số nguyên có bao nhiêu số có tổng chữ số lẻ 
+    bằng tổng chữ số chẵn của số đó.
 
-Cách kiểm tra được thực hiện bởi hàm check(), với tham số đầu vào là một số nguyên n. 
-Hàm này lấy từng chữ số của n, nếu chữ số đó là chẵn thì cộng vào biến tongc, nếu là 
-lẻ thì cộng vào biến tongl. Sau đó hàm trả về true nếu tongc bằng tongl, ngược lại trả 
-về false.
+    Cách kiểm tra được thực hiện bởi hàm check(), với tham số đầu vào là một số nguyên n. 
+    Hàm này lấy từng chữ số của n, nếu chữ số đó là chẵn thì cộng vào biến tongc, nếu là 
+    lẻ thì cộng vào biến tongl. Sau đó hàm trả về true nếu tongc bằng tongl, ngược lại trả 
+    về false.
 
-Trong hàm main(), trước khi nhập từng phần tử của mảng, ta khai báo biến tong để đếm 
-số phần tử trong mảng thỏa mãn yêu cầu. Sau đó, với mỗi phần tử trong mảng, ta gọi hàm 
-check() để kiểm tra, nếu trả về true thì tăng biến tong lên 1. Cuối cùng, in ra giá trị 
-của tong.
+    Trong hàm main(), trước khi nhập từng phần tử của mảng, ta khai báo biến tong để đếm 
+    số phần tử trong mảng thỏa mãn yêu cầu. Sau đó, với mỗi phần tử trong mảng, ta gọi hàm 
+    check() để kiểm tra, nếu trả về true thì tăng biến tong lên 1. Cuối cùng, in ra giá trị 
+    của tong.
 
+Bài 9:
+    Chương trình này được viết bằng ngôn ngữ lập trình C++, có chức năng tìm tổng của 
+    các số nguyên tố trong một dãy các số nguyên. Dưới đây là giải thích chi tiết về code:
+
+    Dòng 1-3: đây là khai báo các thư viện sẽ được sử dụng trong chương trình, bao gồm 
+    <iostream> cho phép nhập xuất từ bàn phím và <math.h> để sử dụng hàm sqrt tính căn 
+    bậc hai của một số.
+
+    Dòng 4: khai báo hàm kiểm tra số nguyên tố, với đầu vào là một số nguyên n. Hàm sẽ trả 
+    về 0 nếu số đó không phải là số nguyên tố và trả về số đó nếu là số nguyên tố.
+
+    Dòng 5-8: trong hàm kiểm tra số nguyên tố, nếu số đầu vào là nhỏ hơn hoặc bằng 1, trả về 
+    0 vì số 1 và các số nhỏ hơn không phải là số nguyên tố. Nếu số đầu vào lớn hơn 1, sử dụng vòng
+    lặp for để kiểm tra từ 2 đến căn bậc hai của số đó (vì nếu một số không phải số nguyên tố thì 
+    nó sẽ có ít nhất một ước số lớn hơn căn bậc hai của nó). Nếu tìm thấy ước số của n, trả về 0 
+    vì số đó không phải là số nguyên tố.
+
+    Dòng 9-15: trong hàm main, đầu tiên khai báo biến n và tong bằng 0, sau đó nhập giá trị 
+    của n từ bàn phím. Khai báo một mảng a với kích thước n và sử dụng vòng lặp for để lần 
+    lượt nhập giá trị các phần tử của mảng a từ bàn phím. Trong vòng lặp này, sử dụng hàm kiểm 
+    tra số nguyên tố để kiểm tra xem mỗi phần tử của mảng a có phải là số nguyên tố hay không. 
+    Nếu là số nguyên tố, giá trị của phần tử đó sẽ được cộng vào biến tong.
+
+    Dòng 16: xuất ra màn hình giá trị của tong, tức là tổng của các số nguyên tố trong mảng a.
 
 
