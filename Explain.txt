@@ -27,3 +27,16 @@ hàm BnS để tìm kiếm k trong mảng a, và in ra kết quả tìm kiếm.
 
 
 bai 11
+Các bước thực hiện chương trình như sau:
+Nhập vào số phần tử của mảng n và các phần tử của mảng a.
+Nhập giá trị k cần chèn vào mảng a.
+Sử dụng hàm timViTri để tìm vị trí cần chèn phần tử k vào trong mảng a.
+Sử dụng hàm chen để chèn phần tử k vào vị trí tìm được từ bước trên vào mảng a.
+In ra mảng a sau khi đã chèn phần tử k vào vị trí thích hợp.
+Hàm timViTri sẽ trả về vị trí cần chèn phần tử k vào trong mảng a, sao cho mảng 
+a vẫn được sắp xếp tăng dần. Nếu giá trị k lớn hơn giá trị lớn nhất trong mảng a 
+thì hàm sẽ trả về n. Nếu giá trị k nhỏ hơn giá trị nhỏ nhất trong mảng a thì hàm 
+sẽ trả về 0.
+Hàm chen sẽ chèn phần tử k vào vị trí tmp trong mảng a bằng cách dịch các 
+phần tử từ vị trí tmp đến n-1 sang phải một vị trí, sau đó gán giá trị k vào 
+vị trí tmp. Cuối cùng, số phần tử của mảng sẽ tăng thêm một đơn vị.
