@@ -126,3 +126,17 @@ Bài 4và5:
     để kiểm tra xem chúng có khác 0 không. Nếu chúng khác 0, hàm sẽ tính và in ra UCLN và 
     BCNN của chúng bằng cách sử dụng hai hàm UCLN1() và UCLN(). Nếu chúng bằng 0, hàm sẽ in 
     ra tổng của a và b.
+
+Bài 3:
+    Đây là bài kiểm tra tam giác.
+    Hàm main cho phép ta nhập lần lượt các cạnh của tam giác và tính kết quả 
+    dựa vào hàm kiemtratamgiac
+    Hàm kiemtratamgiac nhận giá trị vào a,b,c. Kiểm tra lần lượt 2 cạnh cộng lại
+    phải lớn hơn 1 cạnh còn lại thì tiếp tục kiểm tra sâu hơn không thì trả về ko phải
+    tam giacs. Sau khi pass đc đk đầu, tiếp tục kiểm tra tam giác đều a==b hoạc b==c nếu đúng 
+    thì hoặc c == a thì in ra đều
+    in ra sai thì tiếp tục kiểm tra. Nếu 2 cạnh bình phương + lại = cạnh còn lại bình phương
+    thì in ra tam giacs vuông. Nếu không phải thì là tam giác thường. 
+
+bài 2:
+    
