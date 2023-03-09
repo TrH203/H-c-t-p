@@ -139,4 +139,28 @@ Bài 3:
     thì in ra tam giacs vuông. Nếu không phải thì là tam giác thường. 
 
 bài 2:
-    
+    Trong hàm daonguoc, chương trình sử dụng một vòng lặp while để đảo ngược số nguyên 
+    dương n theo cách sau:
+    Ban đầu, chương trình khởi tạo một biến rs có giá trị ban đầu là 0.
+    Sau đó, trong mỗi lần lặp, chương trình lấy số cuối cùng của n bằng cách tính toán n%10 
+    và cộng nó vào biến rs theo công thức rs = rs * 10 + n%10. Điều này có nghĩa là chương 
+    trình sẽ thêm số cuối cùng của n vào đầu của số đảo ngược, giống như việc thêm chữ cái 
+    vào đầu một từ để đảo ngược từ đó.
+    Sau đó, chương trình cập nhật n bằng cách chia n cho 10 để loại bỏ số cuối cùng vừa được 
+    lấy. Điều này có nghĩa là chương trình đang xử lý số thứ hai từ cuối cùng của n, và sẽ 
+    tiếp tục lấy số cuối cùng và cập nhật lại n cho đến khi n có giá trị bằng 0.
+    Cuối cùng, khi vòng lặp kết thúc và n có giá trị bằng 0, chương trình trả về giá trị của 
+    biến rs, tức là số nguyên dương đã được đảo ngược.
+
+Bài 1:
+    Hàm main thực hiện nhiệm vụ nhập các giá trị a,b,c của phương trình vào và thực
+    hiện hàm tinhPtrinhBac2
+    Hàm tinhPtrinhBac2 nhận giá trị a,b,c và tính delta theo công thức và lưu vào biến delta
+    Sau khi có delta, ta xét đk
+    nếu delta < 0 ta in ra pt vo nghiem
+    nếu delta == 0 ta in ra pt có nghiêmj kép x1=x2=-b/a
+    nếu delta không thuộc trường hợp trên thì ta tính x1, x2 theo công thức
+    x1 = -b + sqrt(delta) / 2*a
+    x2 = -b - sqrt(delta) / 2*a
+
+    Sau cùng in đáp số đã tính ra.
