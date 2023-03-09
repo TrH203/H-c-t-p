@@ -80,4 +80,25 @@ Bài 9:
 
     Dòng 16: xuất ra màn hình giá trị của tong, tức là tổng của các số nguyên tố trong mảng a.
 
+Bài 8:
+    Đoạn code này viết bằng ngôn ngữ lập trình C++ để tính toán số Bộ Phận của một số 
+    nguyên dương n. Số Bộ Phận là một dãy số trong đó hai số đầu tiên là 0 và 1, và các 
+    số sau đó được tính toán bằng cách cộng hai số trước đó.
 
+    Trong đoạn code, hàm soBP() được định nghĩa để tính toán số Bộ Phận tại vị trí n. 
+    Nếu n < 4, hàm sẽ trả về giá trị của n. Ngược lại, hàm sẽ gọi đệ quy để tính toán giá trị 
+    của số Bộ Phận tại vị trí n-1 và n-2, và trả về tổng của hai giá trị này.
+
+    Trong hàm main(), giá trị của n được nhập vào từ bàn phím, sau đó hàm soBP() được gọi để 
+    tính toán và in kết quả ra màn hình.
+
+Bài 7:
+    Đây là một đoạn mã C++ để chuyển một số nguyên dương từ hệ thập phân sang hệ nhị phân. 
+    Hàm chuyenSangNhiPhan() được định nghĩa để thực hiện quá trình chuyển đổi này bằng cách 
+    sử dụng đệ quy. Hàm main() cho phép nhập giá trị n từ bàn phím và in ra giá trị nhị phân 
+    tương ứng.
+    
+    Hàm chuyenSangNhiPhan() chuyển một số nguyên dương từ hệ thập phân sang hệ nhị phân bằng 
+    cách sử dụng đệ quy và trả về một chuỗi nhị phân.
+    Hàm main() cho phép người dùng nhập giá trị n từ bàn phím và in ra giá trị nhị phân tương 
+    ứng bằng cách gọi hàm chuyenSangNhiPhan().
