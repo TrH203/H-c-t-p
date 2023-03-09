@@ -1,6 +1,5 @@
 #include<iostream>
 using namespace std;
-
 int BnS(int a[],int n, int k){
     int dem = 0;
     int l=0,r=n,mid;
@@ -20,7 +19,6 @@ int BnS(int a[],int n, int k){
     }
     return -1;
 }
-
 int main(){
     int n,k;
     cin >> n;

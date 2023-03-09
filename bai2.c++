@@ -10,7 +10,6 @@ int daonguoc(int n){
 }
 int main(){
     int n;
-    cout << "Nhap n: ";
     cin >> n;
-    cout << "So dao nguoc cua "<< n << " la: " << daonguoc(n);
+    cout << daonguoc(n);
 }
