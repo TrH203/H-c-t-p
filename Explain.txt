@@ -1,0 +1,29 @@
+Bài 13:
+Code này sử dụng thuật toán nổi bọt để sắp xếp một mảng các số nguyên tăng dần.
+Hàm bubbleSort nhận đầu vào là một mảng A và số phần tử của mảng n. Trong hàm này,
+vòng lặp bên ngoài dùng để lặp qua từng phần tử của mảng. Trong khi đó, vòng lặp 
+bên trong sử dụng để so sánh các phần tử lân cận và hoán đổi chúng nếu chúng không 
+ở đúng thứ tự. Khi đã lặp qua tất cả các phần tử của mảng, mảng A sẽ được sắp xếp tăng dần.
+Trong hàm main, đầu tiên nhập số phần tử n của mảng, sau đó tạo mảng a 
+có kích thước n và nhập từng phần tử của mảng vào. Sau đó, gọi hàm bubbleSort
+để sắp xếp mảng a. Cuối cùng, in ra mảng a đã được sắp xếp tăng dần.
+
+Bai 12:
+Hàm BnS nhận đầu vào là một mảng a, số phần tử của mảng n, 
+và số nguyên k cần tìm. Trong hàm này, ta khởi tạo biến dem 
+bằng 0 để đếm số lần lặp lại trong quá trình tìm kiếm. 
+Ta cũng khởi tạo biến l bằng 0 và biến r bằng n (số phần tử của mảng a) 
+để xác định khoảng giá trị mà k có thể nằm trong đó. Ta cũng khởi tạo biến 
+mid bằng trung bình của l và r.
+Trong vòng lặp while, ta kiểm tra xem đã tìm kiếm đủ n lần chưa, nếu rồi thì 
+thoát vòng lặp. Nếu k lớn hơn giá trị ở vị trí mid của mảng a, ta cập nhật l 
+bằng mid+1. Nếu k nhỏ hơn giá trị ở vị trí mid của mảng a, ta cập nhật r bằng 
+mid. Nếu k bằng giá trị ở vị trí mid của mảng a, ta trả về mid. Sau mỗi lần cập 
+nhật l, r, và mid, ta cập nhật biến dem lên 1.
+Nếu không tìm thấy giá trị k trong mảng, ta trả về -1.
+Trong hàm main, đầu tiên nhập số phần tử n của mảng, sau đó nhập số nguyên k cần tìm. 
+Tiếp theo, tạo mảng a có kích thước n và nhập từng phần tử của mảng vào. Cuối cùng, gọi 
+hàm BnS để tìm kiếm k trong mảng a, và in ra kết quả tìm kiếm.
+
+
+bai 11
