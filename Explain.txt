@@ -97,8 +97,32 @@ Bài 7:
     Hàm chuyenSangNhiPhan() được định nghĩa để thực hiện quá trình chuyển đổi này bằng cách 
     sử dụng đệ quy. Hàm main() cho phép nhập giá trị n từ bàn phím và in ra giá trị nhị phân 
     tương ứng.
-    
+
     Hàm chuyenSangNhiPhan() chuyển một số nguyên dương từ hệ thập phân sang hệ nhị phân bằng 
     cách sử dụng đệ quy và trả về một chuỗi nhị phân.
     Hàm main() cho phép người dùng nhập giá trị n từ bàn phím và in ra giá trị nhị phân tương 
     ứng bằng cách gọi hàm chuyenSangNhiPhan().
+
+Bài 6:
+    Nếu giá trị đầu vào n là 0 hoặc 1, hàm sẽ trả về 1 (vì 0! = 1 và 1! = 1)
+    Nếu giá trị đầu vào n là 2, hàm sẽ trả về 2
+    Nếu giá trị đầu vào n lớn hơn 2, hàm sẽ gọi đệ quy chính nó với đối số n-1, 
+    sau đó nhân kết quả trả về với n để tính giai thừa của n.
+    Trong hàm main, chương trình nhận giá trị đầu vào n từ người dùng và gọi hàm 
+    giaithua để tính giai thừa của n, sau đó in kết quả lên màn hình.
+Bài 4và5:
+    Hàm check(a, b): Hàm này kiểm tra xem hai số a và b có khác 0 không bằng cách tính tích 
+    của chúng. Nếu tích khác 0, hàm sẽ trả về giá trị true (đúng); ngược lại, hàm trả về giá 
+    trị false (sai).
+    Hàm UCLN(a, b): Hàm này tính ước chung lớn nhất của hai số nguyên dương a và b bằng cách 
+    sử dụng phương pháp đệ quy. Hàm sẽ chạy đệ quy cho đến khi a và b bằng nhau. Nếu a lớn 
+    hơn b, hàm sẽ gọi lại chính nó với hai tham số là a - b và b; ngược lại, nó sẽ gọi lại với hai tham số là a và b - a.
+    Hàm UCLN1(a, b): Hàm này cũng tính ước chung lớn nhất của hai số a và b, nhưng bằng cách 
+    sử dụng vòng lặp for. Hàm này sẽ lặp qua các số từ max(a, b) đến 1 và trả về giá trị đầu 
+    tiên mà a và b đều chia hết cho nó.
+    Hàm BCNN(a, b): Hàm này tính bội chung nhỏ nhất của hai số a và b bằng cách chia tích của 
+    chúng cho ước chung lớn nhất của chúng.
+    Hàm main(): Hàm này cho phép nhập hai giá trị a và b từ bàn phím và sử dụng hàm check() 
+    để kiểm tra xem chúng có khác 0 không. Nếu chúng khác 0, hàm sẽ tính và in ra UCLN và 
+    BCNN của chúng bằng cách sử dụng hai hàm UCLN1() và UCLN(). Nếu chúng bằng 0, hàm sẽ in 
+    ra tổng của a và b.
