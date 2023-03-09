@@ -12,7 +12,7 @@ int timViTri(int n, int k){
     if (k > a[n-1]) return n;
 
     for(int i = 0; i < n;i++){
-        if (k >= a[i]){
+        if (k <= a[i]){
             tmp = i;
             break;
         }

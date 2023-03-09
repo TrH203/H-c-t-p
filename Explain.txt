@@ -40,3 +40,20 @@ sẽ trả về 0.
 Hàm chen sẽ chèn phần tử k vào vị trí tmp trong mảng a bằng cách dịch các 
 phần tử từ vị trí tmp đến n-1 sang phải một vị trí, sau đó gán giá trị k vào 
 vị trí tmp. Cuối cùng, số phần tử của mảng sẽ tăng thêm một đơn vị.
+
+bai 10:
+Code này kiểm tra trong một mảng các số nguyên có bao nhiêu số có tổng chữ số lẻ 
+bằng tổng chữ số chẵn của số đó.
+
+Cách kiểm tra được thực hiện bởi hàm check(), với tham số đầu vào là một số nguyên n. 
+Hàm này lấy từng chữ số của n, nếu chữ số đó là chẵn thì cộng vào biến tongc, nếu là 
+lẻ thì cộng vào biến tongl. Sau đó hàm trả về true nếu tongc bằng tongl, ngược lại trả 
+về false.
+
+Trong hàm main(), trước khi nhập từng phần tử của mảng, ta khai báo biến tong để đếm 
+số phần tử trong mảng thỏa mãn yêu cầu. Sau đó, với mỗi phần tử trong mảng, ta gọi hàm 
+check() để kiểm tra, nếu trả về true thì tăng biến tong lên 1. Cuối cùng, in ra giá trị 
+của tong.
+
+
+
